@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <string.h>
 #include <cs50.h>
 #include <ctype.h>
@@ -18,7 +19,7 @@ string ari (string s)	{
 			ns++;
 	}
 
-	int ari= (4.71 * ((float)nc/nw)) + (0.5 * ((float)nw/ns)) - 21.43;
+	float ari= (4.71 * ((float)nc/nw)) + (0.5 * ((float)nw/ns)) - 21.43;
 	if (ari != (int)ari)
 		ari=(int)ari+1; 
 	
@@ -51,6 +52,7 @@ string ari (string s)	{
 			break;
 		case 14:	return "Professor";
 			break;
+		default: return "Error";
 		}
 
 } 
