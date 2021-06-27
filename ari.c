@@ -19,8 +19,10 @@ string ari (string s)	{
 	}
 
 	int ari= (4.71 * ((float)nc/nw)) + (0.5 * ((float)nw/ns)) - 21.43;
+	if (ari != (int)ari)
+		ari=(int)ari+1; 
 	
-	switch (ari)	{
+	switch ((int)ari)	{
 		case 1:		return "Kindergarten";
 			break;
 		case 2:		return "First/Second Grade";
